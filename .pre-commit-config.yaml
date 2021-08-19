@@ -50,8 +50,10 @@ repos:
       # - id: requirements-txt-fixer
       # - id: sort-simple-yaml
       - id: trailing-whitespace
-  - repo: https://gitlab.com/pycqa/flake8
-    rev: '3.8.4'
+  - repo: https://gitlab.com/retnikt/flake9
+    rev: '3.8.3.post1'
     hooks:
     - id: flake8
+      additional_dependencies:
+        - toml
       exclude: "^docs/"
